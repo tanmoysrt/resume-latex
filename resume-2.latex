@@ -1,0 +1,220 @@
+
+\documentclass[letterpaper, 11pt]{article}
+
+\pdfgentounicode=1
+
+% font
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{noto}
+
+% packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\usepackage[left=1.2cm,right=1.2cm,top=1cm,bottom=1cm]{geometry}
+
+% custom
+
+% command macros
+\newcommand{\iconSpace}{\hspace{1px}}
+\newcommand{\bulletSpace}{\vspace{-8pt}}
+\newcommand{\removeStartSpace}{\vspace{-5pt}}
+\newcommand{\hSpace}{\hspace{8px}}
+\newcommand{\secStartSpace}{\vspace{3pt}}
+\newcommand{\secEndSpace}{\vspace{9pt}}
+\newcommand{\spaceCollapse}{\vspace{-5pt}}
+% use the macro for work experience header
+% arg 1 = header title
+% arg 2 = position title (subtitle (in italics)
+% arg 3 = date
+\newcommand{\workHeader}[3]{
+\noindent \textbf{#1} \hfill \textbf{#3}\\
+	\textit{#2}
+}
+
+% line spacing
+% \linespread{1.15}
+
+% colors
+\definecolor{blue}{RGB}{14, 100, 237} % change the blue color if this one is not to your liking
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blue,
+    urlcolor=blue,
+}
+
+% indent space
+\titlespacing{\section}{0pt}{1px}{2ex}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+% ------------- header ------------- %
+\begin{center} 
+	{\Large \textbf{Tanmoy Sarkar}}\\
+	\vspace{5px}
+	% "footnotes" (icon + link)
+	{\footnotesize
+		\faIcon{envelope} \href{mailto:ts741127@gmail.com}{ts741127@gmail.com} 
+		\hSpace
+            \faIcon{github} \iconSpace \href{https://github.com/tanmoysrt}{tanmoysrt}
+		\hSpace 
+		\faIcon{linkedin} \hspace{.1px} \href{https://linkedin.com/in/tanmoysrt}{Tanmoy Sarkar} 
+		\hSpace
+		\faIcon{phone} \iconSpace
+		+91 9641831706
+		}\\
+\end{center}
+\spaceCollapse
+% ------------- end header ------------- %
+
+% ------------- work experience ------------- %
+\section{\textbf{Experience}}
+\secStartSpace
+
+\begin{addmargin}[0em]{0em}
+	\removeStartSpace \noindent \textbf{Google Summer of Code 2023 - CircuitVerse} \hfill \textbf{Jun 2023 - Aug 2023}\\
+	\textit{Developer} \hfill \textit{Remote}
+	\spaceCollapse
+	\begin{itemize}[leftmargin=12pt]
+		\item CircuitVerse is a free platform for designing and simulating digital logic circuits in the browser.
+            \bulletSpace \item I enhanced CircuitVerse by integrating tools like Solargraph LSP, Debugger, Vite Rails, and Undercover CI. Additionally, I enabled effortless setup on GitPod and GitHub Codespaces. Moreover, I established a rapid Docker-based local development environment, ensuring no feature loss.
+            \bulletSpace \item \href{https://drive.google.com/file/d/1FlTok7CJ-ngva7v4C0W4Y_3IylJUZdOO/view?usp=sharing}{Link to my accepted proposal here}
+            \bulletSpace
+	\end{itemize}
+\end{addmargin}
+\secEndSpace
+
+% ---------- certs ----------- %
+\section{\textbf{Certification}}
+\secStartSpace
+
+\begin{addmargin}[0em]{0em}
+    \removeStartSpace \noindent \textbf{Certified Kubernetes Administrator (CKA)} \hfill \textbf{Aug 2023}\\
+    Certificate: \href{https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/09e4c231-9853-403a-991f-34fd61bdd935-tanmoy-sarkar-fbfa9ab3-be56-4c92-8da6-176f18fe74cd-certificate.pdf}{CKA Linux Foundation} \space Verified Badge: \href{https://www.credly.com/badges/77ed2c69-2702-40f3-aca3-05848f5c5175/public_url}{Credly}
+\end{addmargin}
+\secEndSpace
+% ------ end certs ----------- %
+% ------------- projects ------------- %
+\section{\textbf{Projects}}
+\secStartSpace
+
+\begin{addmargin}[0em]{0em}
+\removeStartSpace
+	% ------------- project 1 ------------- %
+	\noindent \textbf{SwiftWave} \hfill \faIcon{github} \href{https://github.com/swiftwave-org/swiftwave}{GitHub} \\
+	 \textit{ Go, Echo Framework, Docker Swarm, HaProxy, go-git, Let's Encrypt(acmez)} \\
+
+        \vspace{-11pt}
+        \noindent SwiftWave is a self-hosted PaaS solution enabling seamless application deployment and management; empowered end users to deploy apps from various sources, such as Local folder, Git, and Docker Hub. It helps to reduce deployment time from hours to minutes. \\
+        
+        \vspace{-8pt}
+	% ------------- end project 1 ------------- %
+
+ 	% ------------- project 2 ------------- %
+	\noindent \textbf{SwiftWave Dashboard} \hfill \faIcon{github} \href{https://github.com/swiftwave-org/swiftwave-dashboard}{GitHub} \\
+	 \textit{ React, Chakra UI} \\
+
+        \vspace{-11pt}
+        \noindent SwiftWave dashboard is a web based GUI to interact with SwiftWave service and  efficiently manage applications, services, domains, service mappings and git credentials. \\
+        
+        \vspace{-8pt}
+	% ------------- end project 2 ------------- %
+ 
+  	% ------------- project 3 ------------- %
+	\noindent \textbf{Portio} \hfill \faIcon{link} \href{https://portio.in}{Deployed link} \space \space 
+ \faIcon{github} \href{https://github.com/Portio-in/Portio}{GitHub} 
+		
+	\noindent \textit{NextJS, NodeJS, Express, Prisma, Python, RabbitMQ, Cassandra, Google and Github OAuth} \\
+
+        \vspace{-11pt}
+        \noindent Portio is a free open-source platform which allows users to create their portfolio and manage it efficiently and allows them to switch between different themes anytime. \\
+
+        \vspace{-8pt}
+	% ------------- end project 3 ------------- %
+
+   	% ------------- project 4 ------------- %
+    \noindent \textbf{Lumi} \hfill \faIcon{link} \href{https://pypi.org/project/lumi/}{PyPi} \space \space 
+ \faIcon{github} \href{https://github.com/tanmoysrt/lumi}{GitHub} 
+
+    \noindent \textit{Python, nanoid, waitress}\\
+
+    \vspace{-11pt}
+    \noindent Lumi is a nano framework to convert python functions into a REST API without any configuration.\\
+
+    \vspace{-8pt}
+	% ------------- end project 4 ------------- %	
+
+   	% ------------- project 5 ------------- %
+    \noindent \textbf{PyAadhaar} \hfill \faIcon{link} \href{https://pypi.org/project/pyaadhaar/}{PyPi} \space \space 
+ \faIcon{github} \href{https://github.com/tanmoysrt/pyaadhaar}{GitHub} 
+		
+    \noindent \textit{Python, Numpy, pyzbar, OpenCV, Pillow}\\
+
+    \vspace{-11pt}
+    \noindent PyAadhaar is a python SDK to decode Python Secure QR, Normal QR and Aadhaar Offline XML\\
+
+	% ------------- end project 5 ------------- %	
+ 
+\vspace{-12pt}
+\end{addmargin}
+\secEndSpace
+% ------------- end projects ------------- %
+
+
+% ------------- skills ------------- %
+\section{\textbf{Skills}}
+\secStartSpace
+
+\begin{addmargin}[0em]{0em}
+    \removeStartSpace
+    \begin{itemize}[leftmargin=*]
+               \item Languages/Technologies: Python, Java, Golang, JavaScript, NodeJS, Express, ReactJS, Django, Echo
+                \bulletSpace \item Databases: PostgreSQL, MongoDB, Redis, Neo4J
+                \bulletSpace \item Platforms/Softwares: Linux, Git, Docker, Kubernetes, Jenkins, GitHub Actions.
+            \end{itemize} 
+    \end{addmargin}
+\secEndSpace
+% ------------- end skills ------------- %
+
+% ------------- education ------------- %
+\section{\textbf{Education}}
+\secStartSpace
+
+\begin{addmargin}[0em]{0em}
+	\removeStartSpace \textbf{Bachelor of Computer Science and Engineering}, Jadavpur University\hfill \textbf{2020 - 2024}\\
+	\setlength\parindent{0.4cm}CGPA: 8.67
+\end{addmargin}
+\secEndSpace
+% ------------- end education ------------- %
+
+% ------------- achievements ------------- %
+\section{\textbf{Achievements}}
+\secStartSpace
+
+\begin{addmargin}[0em]{0em}
+\begin{itemize}[leftmargin=*, itemsep=-2.25pt]
+    \removeStartSpace \item \textbf{Top 10 teams out of 400} in \textbf{HackNITR 4.0} - Project \faIcon{github} \href{https://github.com/CrazyDev2-0/unGit}{UnGit} \hfill \textbf{Jan 2023}
+    \item \textbf{Overall Winning Team} in \textbf{HackOdisha 2.0} - Project \faIcon{github} \href{https://github.com/CrazyDev2-0/instaaid}{InstaAid} \hfill \textbf{Oct 2022}
+    \item \textbf{Top 7 team out of 3000} in \textbf{Aadhaar Hackathon 2021} - Solution \faIcon{github} \href{https://github.com/tanmoysrt/We_r_Titanicx_Aadhaar_Hackathon_Address_Update_Problem}{Address Updation} \hfill \textbf{Dec 2021}
+    \item \textbf{Overall Winning Team} in \textbf{Hack-N-Pitch} - Project \faIcon{github} \href{https://devfolio.co/projects/kampusvire-f9ab}{KampusVire} \hfill \textbf{Oct 2021} 
+    \item \textbf{First Runner Up} in \textbf{Doubleslash Hackathon} - Project \faIcon{github} \href{https://github.com/tanmoysrt/Intellup}{Intellup} \hfill \textbf{Jul 2021}
+    
+            
+\end{itemize}
+\end{addmargin}
+% ------------- end achievements ------------- %
+
+\end{document}
